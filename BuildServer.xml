@@ -15,13 +15,11 @@
         	<fileset dir="bin" includes="nl/tudelft/bw4t/client/*"/>
         	<fileset dir="bin" includes="nl/tudelft/bw4t/map/*"/>
             <fileset dir="bin" includes="nl/tudelft/bw4t/BW4TBuilder*"/> -->
-            <zipfileset excludes="META-INF/*.SF" src="../GOAL/dep/eis-0.3.jar"/>
         	<zipfileset excludes="META-INF/*.SF" src="dep/jgrapht-jdk1.6.jar"/>
         	<zipfileset excludes="META-INF/*.SF" src="dep/javolution-5.5.1.jar"/>
         	<zipfileset excludes="META-INF/*.SF" src="dep/saf.core.ui.jar"/>
         	<zipfileset excludes="META-INF/*.SF" src="dep/saf.core.v3d.jar"/>
         	<zipfileset excludes="META-INF/*.SF" src="dep/bw4tmap.jar"/>
-        	
         </jar>
     	
 		<condition property="cancopy">
