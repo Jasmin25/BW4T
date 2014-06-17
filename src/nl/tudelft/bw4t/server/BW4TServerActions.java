@@ -12,6 +12,7 @@ import eis.EnvironmentInterfaceStandard;
 import eis.exceptions.AgentException;
 import eis.exceptions.EntityException;
 import eis.exceptions.ManagementException;
+import eis.exceptions.QueryException;
 import eis.exceptions.RelationException;
 import eis.iilang.Action;
 import eis.iilang.EnvironmentState;
@@ -265,7 +266,7 @@ public interface BW4TServerActions extends Remote {
 	 *             , if an exception occurs during the execution of a remote
 	 *             object call
 	 */
-	String queryProperty(String property) throws RemoteException;
+	String queryProperty(String property) throws QueryException;
 
 	/**
 	 * Query a property of an entity on the server
